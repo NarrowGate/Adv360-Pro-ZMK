@@ -55,11 +55,11 @@
 
         layer_keypad {
             bindings = <
-&kp EQUAL  &kp N1        &kp N2        &kp N3    &kp N4        &kp N5  &trans                                                   &mo 3      &kp N6           &kp KP_NUM         &kp KP_EQUAL     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp MINUS
-&kp TAB    &kp LEFT_WIN  &kp LSHIFT    &kp E     &kp LEFT_ALT  &kp T   &none                                                    &none      &kp Y            &kp KP_N7          &kp KP_N8        &kp KP_N9             &kp RIGHT_ALT         &kp BSLH
-&kp ESC    &kp LCTRL     &kp LEFT_WIN  &kp D     &kp F         &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp LEFT_ARROW   &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW       &kp TAB               &kp APOS
-&kp LSHFT  &kp Z         &kp X         &kp C     &kp V         &kp B                        &kp HOME      &kp PG_UP                        &kp PRINTSCREEN  &kp KP_N1          &kp KP_N2        &kp KP_N3             &kp KP_ENTER          &kp RSHFT
-&mo 2      &kp LCTRL     &kp LEFT_WIN  &kp LEFT  &kp RIGHT             &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0                   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp KP_DOT            &kp RBKT              &mo 2
+&kp EQUAL  &kp PRINTSCREEN  &kp N2        &kp N3    &kp N4        &kp N5  &trans                                                   &mo 3      &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp MINUS
+&kp TAB    &kp LEFT_WIN     &kp LSHIFT    &kp E     &kp LEFT_ALT  &kp T   &none                                                    &none      &kp Y           &kp KP_N7          &kp KP_N8        &kp KP_N9             &kp RIGHT_ALT         &kp BSLH
+&kp ESC    &kp LCTRL        &kp LEFT_WIN  &kp D     &kp F         &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW       &kp TAB               &kp APOS
+&kp LSHFT  &kp Z            &kp X         &kp C     &kp V         &kp B                        &kp HOME      &kp PG_UP                        &kp N           &kp M              &kp KP_N2        &kp KP_N3             &kp KP_ENTER          &kp RSHFT
+&mo 2      &kp LCTRL        &kp LEFT_WIN  &kp LEFT  &kp RIGHT             &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LEFT_BRACKET      &kp RBKT              &mo 2
             >;
         };
 
