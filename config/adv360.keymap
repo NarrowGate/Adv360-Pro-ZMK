@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -32,11 +32,26 @@
     };
 
     macros {
-        new_macro: new_macro {
+        left_desktop_macro: left_desktop_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
+            bindings = <&none>, <&macro_press>, <&kp LC(LEFT)>, <&macro_press>;
+
+            label = "LEFT_DESKTOP_MACRO";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        L_mac_desktop {
+            bindings = <&kp LC(LEFT)>;
+            key-positions = <28 40>;
+        };
+
+        R_mac_desktop {
+            bindings = <&kp RC(RIGHT)>;
+            key-positions = <28 43>;
         };
     };
 
