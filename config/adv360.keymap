@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -48,24 +48,56 @@
             bindings = <&kp LC(LEFT)>;
             key-positions = <28 40>;
             layers = <5>;
+            timeout-ms = <250>;
         };
 
         R_mac_desktop {
             bindings = <&kp RC(RIGHT)>;
             key-positions = <28 43>;
             layers = <5>;
+            timeout-ms = <250>;
         };
 
         L_pc_desktop {
             bindings = <&kp LC(LG(LEFT_ARROW))>;
             key-positions = <28 40>;
             layers = <0>;
+            timeout-ms = <250>;
         };
 
         R_pc_desktop {
             bindings = <&kp RC(RG(RIGHT))>;
             key-positions = <28 43>;
             layers = <0>;
+            timeout-ms = <250>;
+        };
+
+        L_mac_tab {
+            bindings = <&kp LG(LS(TAB))>;
+            key-positions = <28 41>;
+            layers = <5>;
+            timeout-ms = <250>;
+        };
+
+        R_mac_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <28 42>;
+            layers = <5>;
+            timeout-ms = <250>;
+        };
+
+        L_pc_tab {
+            bindings = <&kp LA(LS(TAB))>;
+            key-positions = <28 41>;
+            layers = <0>;
+            timeout-ms = <250>;
+        };
+
+        R_pc_tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <28 42>;
+            layers = <0>;
+            timeout-ms = <250>;
         };
     };
 
