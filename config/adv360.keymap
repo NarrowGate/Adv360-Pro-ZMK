@@ -30,7 +30,7 @@
             bindings = <&kp>, <&kp>;
         };
                 
-        pc_desktop_tttttttap_esc: behavior {
+        pc_desktop_tttttttap_esc: pc_desktop_tttttttap_esc {
             compatible = "zmk,behavior-hold-tap";
             label = "Ctrl+Windows or Esc";
             bindings = <&kp LCTRL &kp LGUI>, <&kp ESCAPE>;
