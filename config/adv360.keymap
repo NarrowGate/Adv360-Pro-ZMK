@@ -54,60 +54,18 @@
     combos {
         compatible = "zmk,combos";
 
-        L_mac_desktop {
-            bindings = <&kp LC(LEFT)>;
-            key-positions = <28 40>;
-            layers = <1>;
+        mac_devtool_toggle {
+            bindings = <&kp LG(LA(I))>;
+            key-positions = <31 19>;
+            layers = <6>;
             timeout-ms = <250>;
         };
 
-        R_mac_desktop {
-            bindings = <&kp RC(RIGHT)>;
-            key-positions = <28 43>;
-            layers = <1>;
+        pc_devtool_toggle {
+            bindings = <&kp LS(LC(I))>;
+            key-positions = <31 19>;
             timeout-ms = <250>;
-        };
-
-        L_pc_desktop {
-            bindings = <&kp LC(LG(LEFT_ARROW))>;
-            key-positions = <28 40>;
-            layers = <0>;
-            timeout-ms = <250>;
-        };
-
-        R_pc_desktop {
-            bindings = <&kp RC(RG(RIGHT))>;
-            key-positions = <28 43>;
-            layers = <0>;
-            timeout-ms = <250>;
-        };
-
-        L_mac_tab {
-            bindings = <&kp LG(LS(TAB))>;
-            key-positions = <28 41>;
-            layers = <1>;
-            timeout-ms = <250>;
-        };
-
-        R_mac_tab {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <28 42>;
-            layers = <1>;
-            timeout-ms = <250>;
-        };
-
-        L_pc_tab {
-            bindings = <&kp LA(LS(TAB))>;
-            key-positions = <28 41>;
-            layers = <0>;
-            timeout-ms = <250>;
-        };
-
-        R_pc_tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <28 42>;
-            layers = <0>;
-            timeout-ms = <250>;
+            layers = <7>;
         };
     };
 
@@ -176,21 +134,21 @@
 
         layer_control_mac {
             bindings = <
-&kp GRAVE                   &kp NUMBER_1  &kp N2        &kp N3    &kp N4        &kp N5    &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRI_DEC     &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB                     &kp LEFT_WIN  &kp LSHIFT    &kp E     &kp LEFT_ALT  &kp LGUI  &trans                                                   &trans     &kp TAB         &trans             &kp I         &kp O             &kp P                 &kp BSLH
-&shm LC(LEFT_ARROW) ESCAPE  &trans        &trans        &trans    &trans        &kp G     &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW   &kp TAB               &shm RC(RIGHT) SQT
-&kp LSHFT                   &kp Z         &kp X         &kp C     &kp V         &kp B                          &kp HOME      &kp PG_UP                        &trans          &trans             &kp COMMA     &kp PERIOD        &kp SLASH             &kp RSHFT
-&mo 4                       &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT  &kp RIGHT               &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp DOWN_ARROW     &kp UP_ARROW  &kp LEFT_BRACKET  &kp RBKT              &mo 4
+&kp GRAVE                   &kp NUMBER_1  &kp N2        &kp N3    &kp N4        &kp N5  &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRI_DEC     &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
+&kp TAB                     &kp LEFT_WIN  &kp LSHIFT    &kp E     &kp LEFT_ALT  &kp T   &trans                                                   &trans     &kp TAB         &trans             &kp I         &kp O             &kp P                 &kp BSLH
+&shm LC(LEFT_ARROW) ESCAPE  &trans        &trans        &kp D     &trans        &kp G   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW   &kp TAB               &shm RC(RIGHT) SQT
+&kp LSHFT                   &kp Z         &kp X         &kp C     &kp V         &kp B                        &kp HOME      &kp PG_UP                        &trans          &trans             &kp COMMA     &kp PERIOD        &kp SLASH             &kp RSHFT
+&mo 4                       &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT  &kp RIGHT             &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp DOWN_ARROW     &kp UP_ARROW  &kp LEFT_BRACKET  &kp RBKT              &mo 4
             >;
         };
 
         layer_control_pc {
             bindings = <
-&kp GRAVE                       &kp NUMBER_1  &kp N2        &kp N3    &kp N4        &kp N5    &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB                         &kp LEFT_WIN  &kp LSHIFT    &kp E     &kp LEFT_ALT  &kp LALT  &trans                                                   &trans     &kp TAB         &trans             &kp I         &kp O                 &kp P                 &kp BSLH
-&shm LG(LC(LEFT_ARROW)) ESCAPE  &trans        &trans        &trans    &trans        &kp G     &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW       &kp TAB               &shm RG(RC(RIGHT)) SQT
-&kp LSHFT                       &kp Z         &kp X         &kp C     &kp V         &kp B                          &kp HOME      &kp PG_UP                        &trans          &trans             &kp COMMA     &kp PERIOD            &kp SLASH             &kp RSHFT
-&mo 4                           &kp LCTRL     &kp LEFT_WIN  &kp LEFT  &kp RIGHT               &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp DOWN_ARROW     &kp UP_ARROW  &kp LEFT_BRACKET      &kp RBKT              &mo 4
+&kp GRAVE                       &kp NUMBER_1  &kp N2        &kp N3    &kp N4        &kp N5  &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
+&kp TAB                         &kp LEFT_WIN  &kp LSHIFT    &kp E     &kp LEFT_ALT  &kp T   &trans                                                   &trans     &kp TAB         &trans             &kp I         &kp O                 &kp P                 &kp BSLH
+&shm LG(LC(LEFT_ARROW)) ESCAPE  &trans        &trans        &kp D     &trans        &kp G   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW       &kp TAB               &shm RG(RC(RIGHT)) SQT
+&kp LSHFT                       &kp Z         &kp X         &kp C     &kp V         &kp B                        &kp HOME      &kp PG_UP                        &trans          &trans             &kp COMMA     &kp PERIOD            &kp SLASH             &kp RSHFT
+&mo 4                           &kp LCTRL     &kp LEFT_WIN  &kp LEFT  &kp RIGHT             &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp DOWN_ARROW     &kp UP_ARROW  &kp LEFT_BRACKET      &kp RBKT              &mo 4
             >;
         };
     };
