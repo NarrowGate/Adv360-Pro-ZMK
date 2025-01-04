@@ -39,6 +39,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        mw_hm: mw_hm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MW_HM";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     macros {
@@ -84,11 +94,11 @@
 
         layer_mac {
             bindings = <
-&kp GRAVE   &kp N1              &kp N2      &kp N3      &kp N4       &kp N5  &trans                                                              &trans     &kp N6  &kp N7       &kp N8      &kp N9      &kp N0               &kp MINUS
-&kp TAB     &kp Q               &kp W       &kp E       &kp R        &kp T   &trans                                                              &trans     &kp Y   &kp U        &kp I       &kp O       &kp P                &kp BSLH
-&kp ESCAPE  &mt LEFT_CONTROL A  &mt LGUI S  &mt LALT D  &mt LSHFT F  &kp G   &trans               &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp H   &mt RSHFT J  &mt RALT K  &mt RGUI L  &mt RCTRL SEMICOLON  &kp SQT
-&kp LSHFT   &kp Z               &kp X       &kp C       &kp V        &kp B                                   &kp HOME      &kp PG_UP                        &kp N   &kp M        &kp COMMA   &kp DOT     &kp FSLH             &kp RSHFT
-&mo 2       &kp CAPS            &mo 4       &trans      &trans               &mt SPACE BACKSPACE  &kp DEL    &mo 6         &mo 6      &kp ENTER  &kp SPACE          &trans       &trans      &kp LBKT    &kp RBKT             &mo 4
+&kp GRAVE   &kp N1                 &kp N2         &kp N3         &kp N4          &kp N5  &trans                                                                 &trans     &kp N6  &kp N7          &kp N8         &kp N9         &kp N0                  &kp MINUS
+&kp TAB     &kp Q                  &kp W          &kp E          &kp R           &kp T   &trans                                                                 &trans     &kp Y   &kp U           &kp I          &kp O          &kp P                   &kp BSLH
+&kp ESCAPE  &mw_hm LEFT_CONTROL A  &mw_hm LGUI S  &mw_hm LALT D  &mw_hm LSHFT F  &kp G   &trans                  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp H   &mw_hm RSHFT J  &mw_hm RALT K  &mw_hm RGUI L  &mw_hm RCTRL SEMICOLON  &kp SQT
+&kp LSHFT   &kp Z                  &kp X          &kp C          &kp V           &kp B                                      &kp HOME      &kp PG_UP                        &kp N   &kp M           &kp COMMA      &kp DOT        &kp FSLH                &kp RSHFT
+&mo 2       &kp CAPS               &mo 4          &trans         &trans                  &mw_hm SPACE BACKSPACE  &kp DEL    &mo 6         &mo 6      &kp ENTER  &kp SPACE          &trans          &trans         &kp LBKT       &kp RBKT                &mo 4
             >;
         };
 
