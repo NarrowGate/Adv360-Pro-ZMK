@@ -84,21 +84,21 @@
 
         default_layer {
             bindings = <
-&kp GRAVE   &kp N1              &kp N2      &kp N3          &kp N4       &kp N5  &to 2                                                               &mo 4      &kp N6  &kp N7          &kp N8        &kp N9      &kp N0               &kp MINUS
-&kp TAB     &kp Q               &kp W       &kp E           &kp R        &kp T   &to 0                                                               &to 3      &kp Y   &kp U           &kp I         &kp O       &kp P                &kp BSLH
-&kp ESCAPE  &mt LEFT_CONTROL A  &mt LGUI S  &mt LALT D      &mt LSHFT F  &kp G   &to 1                &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 5      &kp H   &mt RSHFT J     &mt RALT K    &mt RGUI L  &mt RCTRL SEMICOLON  &kp SQT
-&kp LSHFT   &kp Z               &kp X       &kp C           &kp V        &kp B                                   &kp HOME      &kp PG_UP                        &kp N   &kp M           &kp COMMA     &kp DOT     &kp FSLH             &kp RSHFT
-&mo 2       &kp CAPS            &mo 4       &kp LEFT_ARROW  &kp RIGHT            &mt SPACE BACKSPACE  &kp DEL    &mo 7         &mo 7      &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT    &kp RBKT             &mo 4
+&kp GRAVE   &kp N1              &kp N2      &kp N3          &kp N4       &kp N5  &to 2                                                              &mo 4      &kp N6  &kp N7          &kp N8        &kp N9      &kp N0               &kp MINUS
+&kp TAB     &kp Q               &kp W       &kp E           &kp R        &kp T   &to 0                                                              &to 3      &kp Y   &kp U           &kp I         &kp O       &kp P                &kp BSLH
+&kp ESCAPE  &hm LEFT_CONTROL A  &hm LGUI S  &hm LALT D      &hm LSHFT F  &kp G   &to 1                &kp LCTRL  &kp LGUI      &kp RGUI  &kp RCTRL  &to 5      &kp H   &hm RSHFT J     &hm RALT K    &hm RGUI L  &hm RCTRL SEMICOLON  &kp SQT
+&kp LSHFT   &kp Z               &kp X       &kp C           &kp V        &kp B                                   &kp LALT      &kp RALT                        &kp N   &kp M           &kp COMMA     &kp DOT     &kp FSLH             &kp RSHFT
+&mo 2       &kp CAPS            &mo 4       &kp LEFT_ARROW  &kp RIGHT            &hm SPACE BACKSPACE  &kp DEL    &mo 7         &mo 7     &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT    &kp RBKT             &mo 4
             >;
         };
 
         layer_mac {
             bindings = <
-&kp GRAVE   &kp N1                 &kp N2         &kp N3         &kp N4          &kp N5  &trans                                                                 &trans     &kp N6  &kp N7          &kp N8         &kp N9         &kp N0                  &kp MINUS
-&kp TAB     &kp Q                  &kp W          &kp E          &kp R           &kp T   &trans                                                                 &trans     &kp Y   &kp U           &kp I          &kp O          &kp P                   &kp BSLH
-&kp ESCAPE  &mw_hm LEFT_CONTROL A  &mw_hm LGUI S  &mw_hm LALT D  &mw_hm LSHFT F  &kp G   &trans                  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp H   &mw_hm RSHFT J  &mw_hm RALT K  &mw_hm RGUI L  &mw_hm RCTRL SEMICOLON  &kp SQT
-&kp LSHFT   &kp Z                  &kp X          &kp C          &kp V           &kp B                                      &kp HOME      &kp PG_UP                        &kp N   &kp M           &kp COMMA      &kp DOT        &kp FSLH                &kp RSHFT
-&mo 2       &kp CAPS               &mo 4          &trans         &trans                  &mw_hm SPACE BACKSPACE  &kp DEL    &mo 6         &mo 6      &kp ENTER  &kp SPACE          &trans          &trans         &kp LBKT       &kp RBKT                &mo 4
+&kp GRAVE   &kp N1              &kp N2      &kp N3      &kp N4       &kp N5  &trans                                                             &trans     &kp N6  &kp N7       &kp N8      &kp N9      &kp N0               &kp MINUS
+&kp TAB     &kp Q               &kp W       &kp E       &kp R        &kp T   &trans                                                             &trans     &kp Y   &kp U        &kp I       &kp O       &kp P                &kp BSLH
+&kp ESCAPE  &hm LEFT_CONTROL A  &hm LGUI S  &hm LALT D  &hm LSHFT F  &kp G   &trans               &kp LCTRL  &kp LGUI      &kp RGUI  &kp RCTRL  &trans     &kp H   &hm RSHFT J  &hm RALT K  &hm RGUI L  &hm RCTRL SEMICOLON  &kp SQT
+&kp LSHFT   &kp Z               &kp X       &kp C       &kp V        &kp B                                   &kp LALT      &kp RALT                        &kp N   &kp M        &kp COMMA   &kp DOT     &kp FSLH             &kp RSHFT
+&mo 2       &kp CAPS            &mo 4       &trans      &trans               &hm SPACE BACKSPACE  &kp DEL    &mo 6         &mo 6     &kp ENTER  &kp SPACE          &trans       &trans      &kp LBKT    &kp RBKT             &mo 4
             >;
         };
 
