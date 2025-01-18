@@ -145,20 +145,20 @@
         layer_control_mac {
             bindings = <
 &kp GRAVE                   &kp NUMBER_1  &kp N2  &kp N3         &kp N4        &kp N5    &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRI_DEC    &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB                     &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LCMD  &trans                                                   &trans     &kp TAB         &trans             &trans        &trans           &kp P                 &kp BSLH
+&kp TAB                     &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LCMD  &trans                                                   &trans     &kp TAB         &trans             &kp HOME      &kp PG_UP        &kp P                 &kp BSLH
 &shm LC(LEFT_ARROW) ESCAPE  &kp LCMD      &trans  &kp LG(LA(I))  &trans        &kp G     &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB               &shm RC(RIGHT) SQT
-&kp LSHFT                   &kp Z         &kp X   &kp C          &kp LALT      &kp B                          &kp HOME      &kp PG_UP                        &trans          &trans             &trans        &trans           &kp SLASH             &kp RSHFT
-&mo 4                       &kp LEFT_ALT  &trans  &kp LEFT       &trans                  &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &trans             &trans        &trans           &trans                &trans
+&kp LSHFT                   &kp Z         &kp X   &kp C          &kp LALT      &kp B                          &kp HOME      &kp PG_UP                        &trans          &trans             &kp END       &kp PG_DN        &kp SLASH             &kp RSHFT
+&mo 4                       &kp LEFT_ALT  &trans  &kp LEFT       &kp F8                  &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp F11            &kp LS(F11)   &kp F10          &kp F9                &trans
             >;
         };
 
         layer_control_pc {
             bindings = <
 &kp GRAVE                       &kp NUMBER_1  &kp N2  &kp N3         &kp N4        &kp N5        &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB                         &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LEFT_ALT  &trans                                                   &trans     &kp TAB         &trans             &trans        &trans                &kp P                 &kp BSLH
+&kp TAB                         &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LEFT_ALT  &trans                                                   &trans     &kp TAB         &trans             &kp HOME      &kp PAGE_UP           &kp P                 &kp BSLH
 &shm LG(LC(LEFT_ARROW)) ESCAPE  &kp LALT      &trans  &kp LS(LC(I))  &trans        &kp G         &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW       &kp TAB               &shm RG(RC(RIGHT)) SQT
-&kp LSHFT                       &kp Z         &kp X   &kp C          &kp LCTRL     &kp B                              &kp HOME      &kp PG_UP                        &trans          &trans             &trans        &trans                &kp SLASH             &kp RSHFT
-&mo 4                           &kp LCTRL     &trans  &kp LEFT       &trans                      &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &trans             &trans        &trans                &trans                &trans
+&kp LSHFT                       &kp Z         &kp X   &kp C          &kp LCTRL     &kp B                              &kp HOME      &kp PG_UP                        &trans          &trans             &kp END       &kp PAGE_DOWN         &kp SLASH             &kp RSHFT
+&mo 4                           &kp LCTRL     &trans  &kp LEFT       &kp F8                      &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp F11            &kp LS(F11)   &kp F10               &kp F9                &trans
             >;
         };
     };
