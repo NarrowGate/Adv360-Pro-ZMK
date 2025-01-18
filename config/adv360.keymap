@@ -88,7 +88,7 @@
 &kp TAB     &kp Q     &kp W   &kp E           &kp R        &kp T   &to 0                                                              &to 3      &kp Y   &kp U           &kp I         &kp O     &kp P     &kp BSLH
 &kp ESCAPE  &kp A     &kp S   &hm LALT D      &hm LSHFT F  &kp G   &to 1                &kp LCTRL  &kp LGUI      &kp RGUI  &kp RCTRL  &to 5      &kp H   &hm RSHFT J     &hm RALT K    &kp L     &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z     &kp X   &kp C           &kp V        &kp B                                   &kp LALT      &kp RALT                        &kp N   &kp M           &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2       &kp CAPS  &mo 4   &kp LEFT_ARROW  &kp RIGHT            &hm SPACE BACKSPACE  &kp DEL    &mo 7         &mo 7     &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 4
+&mo 2       &kp CAPS  &to 3   &kp LEFT_ARROW  &kp RIGHT            &hm SPACE BACKSPACE  &kp DEL    &mo 7         &mo 7     &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 3
             >;
         };
 
@@ -98,17 +98,17 @@
 &kp TAB     &kp Q     &kp W   &kp E       &kp R        &kp T   &trans                                                             &trans     &kp Y   &kp U        &kp I       &kp O     &kp P     &kp BSLH
 &kp ESCAPE  &kp A     &kp S   &hm LALT D  &hm LSHFT F  &kp G   &trans               &kp LCTRL  &kp LGUI      &kp RGUI  &kp RCTRL  &trans     &kp H   &hm RSHFT J  &hm RALT K  &kp L     &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z     &kp X   &kp C       &kp V        &kp B                                   &kp LALT      &kp RALT                        &kp N   &kp M        &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2       &kp CAPS  &mo 4   &trans      &trans               &hm SPACE BACKSPACE  &kp DEL    &mo 6         &mo 6     &kp ENTER  &kp SPACE          &trans       &trans      &kp LBKT  &kp RBKT  &mo 4
+&mo 2       &kp CAPS  &trans  &trans      &trans               &hm SPACE BACKSPACE  &kp DEL    &mo 6         &mo 6     &kp ENTER  &kp SPACE          &trans       &trans      &kp LBKT  &kp RBKT  &trans
             >;
         };
 
         layer_keypad {
             bindings = <
-&kp ESCAPE  &kp NUMBER_1  &kp N2        &kp N3    &kp N4     &kp N5  &trans                                                   &trans     &kp NUMBER_6  &kp KP_NUM       &kp EQUAL        &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp MINUS
-&kp TAB     &kp Q         &kp W         &kp E     &kp R      &kp T   &trans                                                   &trans     &kp Y         &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_SUBTRACT  &kp BSLH
-&kp CAPS    &kp A         &kp S         &kp D     &kp F      &kp G   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp H         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp APOS
-&kp LSHFT   &kp Z         &kp X         &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N         &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3        &kp KP_ENTER     &kp RSHFT
-&mo 5       &kp LCTRL     &kp LEFT_WIN  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &trans        &trans     &kp ENTER  &kp SPACE                &kp DOWN_ARROW   &kp KP_NUMBER_0  &kp PERIOD       &kp RBKT         &mo 4
+&kp ESCAPE  &kp NUMBER_1  &kp N2  &kp N3    &kp N4     &kp N5  &trans                                                   &trans     &kp NUMBER_6  &kp KP_NUM       &kp EQUAL        &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp MINUS
+&kp TAB     &kp Q         &kp W   &kp E     &kp R      &kp T   &trans                                                   &trans     &kp Y         &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_SUBTRACT  &kp BSLH
+&kp CAPS    &kp A         &kp S   &kp D     &kp F      &kp G   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp H         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp APOS
+&kp LSHFT   &kp Z         &kp X   &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N         &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3        &kp KP_ENTER     &kp RSHFT
+&mo 5       &kp LCTRL     &trans  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &trans        &trans     &kp ENTER  &kp SPACE                &kp DOWN_ARROW   &kp KP_NUMBER_0  &kp PERIOD       &kp RBKT         &trans
             >;
         };
 
@@ -128,37 +128,37 @@
 &none  &none         &none         &none         &none         &none         &trans                                             &trans           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &trans  &none  &none       &bt BT_CLR  &none       &trans           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                        &none       &none                                    &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none   &none  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &none         &trans        &none         &none                       &none   &none  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &trans
             >;
         };
 
         layer_control {
             bindings = <
-&kp GRAVE   &kp NUMBER_1  &kp N2        &kp N3    &kp N4        &kp N5  &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB     &kp LEFT_WIN  &kp W         &kp E     &kp LEFT_ALT  &kp T   &trans                                                   &trans     &kp Y           &kp U              &kp HOME         &kp PAGE_UP           &kp P                 &kp BSLH
-&kp ESCAPE  &trans        &trans        &trans    &trans        &kp G   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW       &kp TAB               &kp APOS
-&kp LSHFT   &kp Z         &kp X         &kp C     &kp V         &kp B                        &kp HOME      &kp PG_UP                        &kp N           &kp M              &kp END          &kp PAGE_DOWN         &kp SLASH             &kp RSHFT
-&mo 4       &kp LCTRL     &kp LEFT_WIN  &kp LEFT  &kp RIGHT             &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp DOWN_ARROW     &kp UP_ARROW     &kp LEFT_BRACKET      &kp RBKT              &mo 4
+&kp GRAVE   &kp NUMBER_1  &kp N2  &kp N3    &kp N4        &kp N5  &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
+&kp TAB     &kp LEFT_WIN  &kp W   &kp E     &kp LEFT_ALT  &kp T   &trans                                                   &trans     &kp Y           &kp U              &kp HOME         &kp PAGE_UP           &kp P                 &kp BSLH
+&kp ESCAPE  &trans        &trans  &trans    &trans        &kp G   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW       &kp TAB               &kp APOS
+&kp LSHFT   &kp Z         &kp X   &kp C     &kp V         &kp B                        &kp HOME      &kp PG_UP                        &kp N           &kp M              &kp END          &kp PAGE_DOWN         &kp SLASH             &kp RSHFT
+&mo 4       &kp LCTRL     &trans  &kp LEFT  &kp F8                &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp F11            &kp LS(F11)      &kp F10               &kp F9                &trans
             >;
         };
 
         layer_control_mac {
             bindings = <
-&kp GRAVE                   &kp NUMBER_1  &kp N2        &kp N3         &kp N4        &kp N5    &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRI_DEC     &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB                     &kp LEFT_WIN  &trans        &kp E          &kp LEFT_ALT  &kp LCMD  &trans                                                   &trans     &kp TAB         &trans             &trans        &trans            &kp P                 &kp BSLH
-&shm LC(LEFT_ARROW) ESCAPE  &kp LCMD      &trans        &kp LG(LA(I))  &trans        &kp G     &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW   &kp TAB               &shm RC(RIGHT) SQT
-&kp LSHFT                   &kp Z         &kp X         &kp C          &kp LALT      &kp B                          &kp HOME      &kp PG_UP                        &trans          &trans             &trans        &trans            &kp SLASH             &kp RSHFT
-&mo 4                       &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT       &kp RIGHT               &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp DOWN_ARROW     &kp UP_ARROW  &kp LEFT_BRACKET  &kp RBKT              &mo 4
+&kp GRAVE                   &kp NUMBER_1  &kp N2  &kp N3         &kp N4        &kp N5    &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRI_DEC    &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
+&kp TAB                     &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LCMD  &trans                                                   &trans     &kp TAB         &trans             &trans        &trans           &kp P                 &kp BSLH
+&shm LC(LEFT_ARROW) ESCAPE  &kp LCMD      &trans  &kp LG(LA(I))  &trans        &kp G     &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB               &shm RC(RIGHT) SQT
+&kp LSHFT                   &kp Z         &kp X   &kp C          &kp LALT      &kp B                          &kp HOME      &kp PG_UP                        &trans          &trans             &trans        &trans           &kp SLASH             &kp RSHFT
+&mo 4                       &kp LEFT_ALT  &trans  &kp LEFT       &trans                  &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &trans             &trans        &trans           &trans                &trans
             >;
         };
 
         layer_control_pc {
             bindings = <
-&kp GRAVE                       &kp NUMBER_1  &kp N2        &kp N3         &kp N4        &kp N5        &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB                         &kp LEFT_WIN  &trans        &kp E          &kp LEFT_ALT  &kp LEFT_ALT  &trans                                                   &trans     &kp TAB         &trans             &trans        &trans                &kp P                 &kp BSLH
-&shm LG(LC(LEFT_ARROW)) ESCAPE  &kp LALT      &trans        &kp LS(LC(I))  &trans        &kp G         &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW       &kp TAB               &shm RG(RC(RIGHT)) SQT
-&kp LSHFT                       &kp Z         &kp X         &kp C          &kp LCTRL     &kp B                              &kp HOME      &kp PG_UP                        &trans          &trans             &trans        &trans                &kp SLASH             &kp RSHFT
-&mo 4                           &kp LCTRL     &kp LEFT_WIN  &kp LEFT       &kp RIGHT                   &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp DOWN_ARROW     &kp UP_ARROW  &kp LEFT_BRACKET      &kp RBKT              &mo 4
+&kp GRAVE                       &kp NUMBER_1  &kp N2  &kp N3         &kp N4        &kp N5        &trans                                                   &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
+&kp TAB                         &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LEFT_ALT  &trans                                                   &trans     &kp TAB         &trans             &trans        &trans                &kp P                 &kp BSLH
+&shm LG(LC(LEFT_ARROW)) ESCAPE  &kp LALT      &trans  &kp LS(LC(I))  &trans        &kp G         &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW       &kp TAB               &shm RG(RC(RIGHT)) SQT
+&kp LSHFT                       &kp Z         &kp X   &kp C          &kp LCTRL     &kp B                              &kp HOME      &kp PG_UP                        &trans          &trans             &trans        &trans                &kp SLASH             &kp RSHFT
+&mo 4                           &kp LCTRL     &trans  &kp LEFT       &trans                      &kp BSPC  &kp DEL    &to 0         &to 1      &kp ENTER  &kp SPACE                  &trans             &trans        &trans                &trans                &trans
             >;
         };
     };
