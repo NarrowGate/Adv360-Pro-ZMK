@@ -84,11 +84,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL   &kp N1    &kp N2     &kp N3          &kp N4       &kp N5  &to 2                                                        &mo 4      &kp N6  &kp N7          &kp N8        &kp N9    &kp N0    &kp MINUS
-&kp TAB     &kp Q     &kp W      &kp E           &kp R        &kp T   &to 0                                                        &to 3      &kp Y   &kp U           &kp I         &kp O     &kp P     &kp BSLH
-&kp ESCAPE  &kp A     &kp S      &hm LALT D      &hm LSHFT F  &kp G   &to 1          &kp LCTRL  &kp LGUI      &kp RGUI  &kp RCTRL  &to 5      &kp H   &hm RSHFT J     &hm RALT K    &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z     &kp X      &kp C           &kp V        &kp B                             &kp LALT      &kp RALT                        &kp N   &kp M           &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2       &kp CAPS  &kp GRAVE  &kp LEFT_ARROW  &kp RIGHT            &kp BACKSPACE  &kp DEL    &mo 7         &mo 7     &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 3
+&kp EQUAL   &kp N1    &kp N2     &kp N3          &kp N4       &kp N5  &to 2                                                                         &mo 4      &kp N6  &kp N7          &kp N8        &kp N9    &kp N0    &kp MINUS
+&kp TAB     &kp Q     &kp W      &kp E           &kp R        &kp T   &to 0                                                                         &to 3      &kp Y   &kp U           &kp I         &kp O     &kp P     &kp BSLH
+&kp ESCAPE  &kp A     &kp S      &hm LALT D      &hm LSHFT F  &kp G   &to 1          &kp LCTRL  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp RCTRL  &to 5      &kp H   &hm RSHFT J     &hm RALT K    &kp L     &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z     &kp X      &kp C           &kp V        &kp B                             &kp LALT              &kp RALT                                 &kp N   &kp M           &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2       &kp CAPS  &kp GRAVE  &kp LEFT_ARROW  &kp LGUI             &kp BACKSPACE  &kp DEL    &mo 7                 &mo 7              &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 3
             >;
         };
 
@@ -144,21 +144,21 @@
 
         layer_control_mac {
             bindings = <
-&kp GRAVE                   &kp NUMBER_1  &kp N2  &kp N3         &kp N4        &kp N5    &trans                                                        &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP      &kp C_BRI_DEC    &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB                     &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LCMD  &trans                                                        &trans     &kp TAB         &trans             &kp HOME          &kp PG_UP        &kp P                 &kp BSLH
-&shm LC(LEFT_ARROW) ESCAPE  &kp LCMD      &trans  &kp LG(LA(I))  &trans        &kp G     &trans         &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW      &kp RIGHT_ARROW  &kp TAB               &shm RC(RIGHT) SQT
-&kp LSHFT                   &kp Z         &kp X   &kp C          &kp LALT      &kp B                               &kp HOME      &kp PG_UP                        &trans          &kp RIGHT_ALT      &kp END           &kp PG_DN        &kp SLASH             &kp RSHFT
-&mo 4                       &kp LEFT_ALT  &trans  &kp LEFT       &kp LG(BSLH)            &kp BACKSPACE  &kp SPACE  &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp LG(SEMI)       &kp LS(LG(SEMI))  &kp LG(APOS)     &kp F9                &trans
+&kp GRAVE                   &kp NUMBER_1  &kp N2  &kp N3         &kp N4        &kp N5              &trans                                                        &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP      &kp C_BRI_DEC    &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
+&kp TAB                     &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LCMD            &trans                                                        &trans     &kp TAB         &trans             &kp HOME          &kp PG_UP        &kp P                 &kp BSLH
+&shm LC(LEFT_ARROW) ESCAPE  &kp LCMD      &trans  &kp LG(LA(I))  &trans        &kp G               &trans         &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW      &kp RIGHT_ARROW  &kp TAB               &shm RC(RIGHT) SQT
+&kp LSHFT                   &kp Z         &kp X   &kp C          &kp LALT      &kp LA(LEFT_SHIFT)                            &kp HOME      &kp PG_UP                        &trans          &kp RIGHT_ALT      &kp END           &kp PG_DN        &kp SLASH             &kp RSHFT
+&mo 4                       &kp LEFT_ALT  &trans  &kp LEFT       &kp LG(BSLH)                      &kp BACKSPACE  &kp SPACE  &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp LG(SEMI)       &kp LS(LG(SEMI))  &kp LG(APOS)     &kp F9                &trans
             >;
         };
 
         layer_control_pc {
             bindings = <
-&kp GRAVE                       &kp NUMBER_1  &kp N2  &kp N3         &kp N4        &kp N5        &trans                                                        &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-&kp TAB                         &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LEFT_ALT  &trans                                                        &trans     &kp TAB         &trans             &kp HOME      &kp PAGE_UP           &kp P                 &kp BSLH
-&shm LG(LC(LEFT_ARROW)) ESCAPE  &kp LALT      &trans  &kp LS(LC(I))  &trans        &kp G         &trans         &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW       &kp TAB               &shm RG(RC(RIGHT)) SQT
-&kp LSHFT                       &kp Z         &kp X   &kp C          &kp LCTRL     &kp B                                   &kp HOME      &kp PG_UP                        &trans          &kp RCTRL          &kp END       &kp PAGE_DOWN         &kp SLASH             &kp RSHFT
-&mo 4                           &kp LCTRL     &trans  &kp LEFT       &kp F8                      &kp BACKSPACE  &kp SPACE  &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp F11            &kp LS(F11)   &kp F10               &kp F9                &trans
+&kp GRAVE                       &kp NUMBER_1  &kp N2  &kp N3         &kp N4        &kp N5              &trans                                                        &trans     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
+&kp TAB                         &kp LEFT_WIN  &trans  &kp E          &kp LEFT_ALT  &kp LEFT_ALT        &trans                                                        &trans     &kp TAB         &trans             &kp HOME      &kp PAGE_UP           &kp P                 &kp BSLH
+&shm LG(LC(LEFT_ARROW)) ESCAPE  &kp LALT      &trans  &kp LS(LC(I))  &trans        &kp G               &trans         &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW       &kp TAB               &shm RG(RC(RIGHT)) SQT
+&kp LSHFT                       &kp Z         &kp X   &kp C          &kp LCTRL     &kp LC(LEFT_SHIFT)                            &kp HOME      &kp PG_UP                        &trans          &kp RCTRL          &kp END       &kp PAGE_DOWN         &kp SLASH             &kp RSHFT
+&mo 4                           &kp LCTRL     &trans  &kp LEFT       &kp F8                            &kp BACKSPACE  &kp SPACE  &to 0         &to 1      &kp ENTER  &kp SPACE                  &kp F11            &kp LS(F11)   &kp F10               &kp F9                &trans
             >;
         };
     };
